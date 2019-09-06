@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ToolLibrary</class>
+ <widget class="QDialog" name="ToolLibrary">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>738</width>
+    <height>492</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Milling Cutter Library</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/new/prefix1/images/appicon.png</normaloff>:/new/prefix1/images/appicon.png</iconset>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <layout class="QGridLayout">
+   <property name="leftMargin">
+    <number>9</number>
+   </property>
+   <property name="topMargin">
+    <number>9</number>
+   </property>
+   <property name="rightMargin">
+    <number>9</number>
+   </property>
+   <property name="bottomMargin">
+    <number>9</number>
+   </property>
+   <property name="spacing">
+    <number>6</number>
+   </property>
+   <item row="0" column="0">
+    <layout class="QVBoxLayout">
+     <property name="spacing">
+      <number>6</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <layout class="QHBoxLayout">
+       <property name="spacing">
+        <number>6</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QTableWidget" name="tableWidget">
+         <property name="minimumSize">
+          <size>
+           <width>400</width>
+           <height>430</height>
+          </size>
+         </property>
+         <column>
+          <property name="text">
+           <string>Tool Type</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Body Dia</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Ball Rad</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Body Len</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Holder Dia</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Holder Len</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Shank Dia</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Shank Len</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Taper Dia A</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Taper Dia B</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Taper Len</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="minimumSize">
+          <size>
+           <width>310</width>
+           <height>430</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout">
+       <property name="spacing">
+        <number>6</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <spacer>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Expanding</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>405</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="buttonAddNew">
+         <property name="text">
+          <string>Add New</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>image1</normaloff>image1</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="buttonCancel">
+         <property name="text">
+          <string>&amp;Close</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>image2</normaloff>image2</iconset>
+         </property>
+         <property name="shortcut">
+          <string>Alt+C</string>
+         </property>
+         <property name="autoDefault">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="buttonHelp">
+         <property name="text">
+          <string>&amp;Help</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>image3</normaloff>image3</iconset>
+         </property>
+         <property name="shortcut">
+          <string>F1</string>
+         </property>
+         <property name="autoDefault">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>buttonAddNew</tabstop>
+  <tabstop>buttonCancel</tabstop>
+  <tabstop>buttonHelp</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

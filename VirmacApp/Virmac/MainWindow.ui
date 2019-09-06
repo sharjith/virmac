@@ -1,0 +1,1147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>903</width>
+    <height>761</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Virmac.qrc">
+    <normaloff>:/new/prefix1/images/appicon.png</normaloff>:/new/prefix1/images/appicon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QMdiArea" name="mdiArea">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QDockWidget" name="dockSimulationBar">
+      <property name="windowTitle">
+       <string>Simulation</string>
+      </property>
+      <widget class="QWidget" name="dockWidgetContents_4">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QPushButton" name="playButton">
+            <property name="maximumSize">
+             <size>
+              <width>55</width>
+              <height>42</height>
+             </size>
+            </property>
+            <property name="autoFillBackground">
+             <bool>true</bool>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="Virmac.qrc">
+              <normaloff>:/new/prefix1/images/play.png</normaloff>:/new/prefix1/images/play.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="stepButton">
+            <property name="maximumSize">
+             <size>
+              <width>55</width>
+              <height>42</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="Virmac.qrc">
+              <normaloff>:/new/prefix1/images/playstep.png</normaloff>:/new/prefix1/images/playstep.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pickPlayButton">
+            <property name="maximumSize">
+             <size>
+              <width>55</width>
+              <height>42</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="Virmac.qrc">
+              <normaloff>:/new/prefix1/images/pickplay.png</normaloff>:/new/prefix1/images/pickplay.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="rewindButton">
+            <property name="maximumSize">
+             <size>
+              <width>55</width>
+              <height>42</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="Virmac.qrc">
+              <normaloff>:/new/prefix1/images/rewind.png</normaloff>:/new/prefix1/images/rewind.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pauseButton">
+            <property name="maximumSize">
+             <size>
+              <width>55</width>
+              <height>42</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="Virmac.qrc">
+              <normaloff>:/new/prefix1/images/pause.png</normaloff>:/new/prefix1/images/pause.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="stopButton">
+            <property name="maximumSize">
+             <size>
+              <width>55</width>
+              <height>42</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="Virmac.qrc">
+              <normaloff>:/new/prefix1/images/stop.png</normaloff>:/new/prefix1/images/stop.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="horizontalSlider">
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="minimum">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <number>100</number>
+            </property>
+            <property name="value">
+             <number>10</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="tickPosition">
+             <enum>QSlider::NoTicks</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lcdNumber">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>46</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::WinPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <property name="smallDecimalPoint">
+             <bool>true</bool>
+            </property>
+            <property name="digitCount">
+             <number>3</number>
+            </property>
+            <property name="segmentStyle">
+             <enum>QLCDNumber::Flat</enum>
+            </property>
+            <property name="value" stdset="0">
+             <double>10.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Points Per Frame</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>NC Block:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="labelNCBlock">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>....</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>903</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Edit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="actionTrimBefore"/>
+    <addaction name="actionTrimAfter"/>
+   </widget>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionReadGCode"/>
+    <addaction name="actionWriteGCode"/>
+    <addaction name="actionReadStLFile"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Simulation">
+    <property name="title">
+     <string>&amp;Simulation</string>
+    </property>
+    <addaction name="actionPlay"/>
+    <addaction name="actionPlayStep"/>
+    <addaction name="actionPickNPlay"/>
+    <addaction name="actionRewind"/>
+    <addaction name="actionPause"/>
+    <addaction name="actionStop"/>
+    <addaction name="separator"/>
+    <addaction name="actionDeleteSirus"/>
+    <addaction name="actionDeleteModel"/>
+    <addaction name="separator"/>
+    <addaction name="actionSettings"/>
+    <addaction name="actionToolLibrary"/>
+    <addaction name="actionRotaryAxes"/>
+   </widget>
+   <widget class="QMenu" name="menu_Preferences">
+    <property name="title">
+     <string>&amp;Preferences</string>
+    </property>
+    <widget class="QMenu" name="menu_Tool">
+     <property name="title">
+      <string>&amp;Tool</string>
+     </property>
+     <widget class="QMenu" name="menuTrail">
+      <property name="title">
+       <string>Trail</string>
+      </property>
+      <addaction name="actionTrailOff"/>
+     </widget>
+     <addaction name="actionTransparent"/>
+     <addaction name="actionToolHide"/>
+     <addaction name="actionToolColor"/>
+     <addaction name="separator"/>
+     <addaction name="menuTrail"/>
+    </widget>
+    <widget class="QMenu" name="menu_Model">
+     <property name="title">
+      <string>&amp;Model</string>
+     </property>
+     <addaction name="actionWireframe"/>
+     <addaction name="actionModelHide"/>
+     <addaction name="actionModelColor"/>
+     <addaction name="actionMaterial"/>
+     <addaction name="separator"/>
+     <addaction name="actionShowNormals"/>
+    </widget>
+    <widget class="QMenu" name="menuGrid">
+     <property name="title">
+      <string>Grid</string>
+     </property>
+     <addaction name="actionGridSettings"/>
+     <addaction name="actionGridColor"/>
+     <addaction name="actionGridOn"/>
+    </widget>
+    <widget class="QMenu" name="menuColors">
+     <property name="title">
+      <string>Colors</string>
+     </property>
+     <addaction name="actionColorToolPath"/>
+     <addaction name="actionColorFeedTrail"/>
+     <addaction name="actionColorRapidTrail"/>
+     <addaction name="actionColorG02Trail"/>
+     <addaction name="actionColorG03Trail"/>
+    </widget>
+    <addaction name="menu_Tool"/>
+    <addaction name="menu_Model"/>
+    <addaction name="actionHideSirus"/>
+    <addaction name="menuColors"/>
+    <addaction name="menuGrid"/>
+    <addaction name="separator"/>
+    <addaction name="actionShowCircularInterp"/>
+    <addaction name="actionTransformations"/>
+   </widget>
+   <widget class="QMenu" name="menu_Analysis">
+    <property name="title">
+     <string>&amp;Analysis</string>
+    </property>
+    <addaction name="actionIntersections"/>
+    <addaction name="separator"/>
+    <addaction name="actionRoughStock"/>
+    <addaction name="actionWYSIWYC"/>
+   </widget>
+   <widget class="QMenu" name="menu_Utilities">
+    <property name="title">
+     <string>&amp;Utilities</string>
+    </property>
+    <widget class="QMenu" name="menuMeasure">
+     <property name="title">
+      <string>Measure</string>
+     </property>
+     <addaction name="actionDistance"/>
+     <addaction name="actionAngle"/>
+    </widget>
+    <addaction name="actionSearchBlock"/>
+    <addaction name="actionPickblock"/>
+    <addaction name="menuMeasure"/>
+    <addaction name="separator"/>
+    <addaction name="actionSimulReport"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionContents"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menu_View">
+    <property name="title">
+     <string>&amp;View</string>
+    </property>
+    <addaction name="actionTopView"/>
+    <addaction name="actionBottomView"/>
+    <addaction name="actionFrontView"/>
+    <addaction name="actionBackView"/>
+    <addaction name="actionLeftView"/>
+    <addaction name="actionRightView"/>
+    <addaction name="actionAxonoView"/>
+    <addaction name="separator"/>
+    <addaction name="actionProjection"/>
+    <addaction name="separator"/>
+    <addaction name="actionFitAll"/>
+    <addaction name="actionZoomWindow"/>
+    <addaction name="actionResetView"/>
+    <addaction name="separator"/>
+    <addaction name="actionAntialiasing"/>
+    <addaction name="actionSnapshot"/>
+    <addaction name="separator"/>
+    <addaction name="actionToolbars"/>
+    <addaction name="actionSimulationbar"/>
+    <addaction name="actionMessagebar"/>
+    <addaction name="actionNCBlockbar"/>
+    <addaction name="actionStatusbar"/>
+   </widget>
+   <widget class="QMenu" name="menuWindow">
+    <property name="title">
+     <string>Window</string>
+    </property>
+    <addaction name="actionTile"/>
+    <addaction name="actionCascade"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menu_Edit"/>
+   <addaction name="menu_View"/>
+   <addaction name="menu_Simulation"/>
+   <addaction name="menu_Preferences"/>
+   <addaction name="menu_Analysis"/>
+   <addaction name="menu_Utilities"/>
+   <addaction name="menuWindow"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionReadGCode"/>
+   <addaction name="actionReadStLFile"/>
+   <addaction name="actionWriteGCode"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionTopView"/>
+   <addaction name="actionBottomView"/>
+   <addaction name="actionFrontView"/>
+   <addaction name="actionBackView"/>
+   <addaction name="actionLeftView"/>
+   <addaction name="actionRightView"/>
+   <addaction name="separator"/>
+   <addaction name="actionAxonoView"/>
+   <addaction name="separator"/>
+   <addaction name="actionProjection"/>
+   <addaction name="separator"/>
+   <addaction name="actionFitAll"/>
+   <addaction name="actionZoomWindow"/>
+   <addaction name="separator"/>
+   <addaction name="actionResetView"/>
+   <addaction name="actionAntialiasing"/>
+   <addaction name="separator"/>
+   <addaction name="actionSnapshot"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_3">
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>RightToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionWriteGCode"/>
+   <addaction name="separator"/>
+   <addaction name="actionSearchBlock"/>
+   <addaction name="actionPickblock"/>
+   <addaction name="separator"/>
+   <addaction name="actionTrimBefore"/>
+   <addaction name="actionTrimAfter"/>
+   <addaction name="separator"/>
+   <addaction name="actionDistance"/>
+   <addaction name="actionAngle"/>
+  </widget>
+  <widget class="QDockWidget" name="dockNCBlock">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>524287</width>
+     <height>524287</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>0</width>
+     <height>150</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>NC Block</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>8</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QGridLayout">
+     <item row="0" column="0">
+      <widget class="QListWidget" name="listWidget">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>0</width>
+         <height>150</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockMessages">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>524287</width>
+     <height>524287</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>0</width>
+     <height>150</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>Messages</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>8</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2">
+    <layout class="QGridLayout">
+     <item row="0" column="0">
+      <widget class="QListWidget" name="listWidget_2">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>0</width>
+         <height>150</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actionReadGCode">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/filegcode.png</normaloff>:/new/prefix1/images/filegcode.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Read G Code</string>
+   </property>
+  </action>
+  <action name="actionWriteGCode">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/filewritegcode.png</normaloff>:/new/prefix1/images/filewritegcode.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Write G Code</string>
+   </property>
+  </action>
+  <action name="actionReadStLFile">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/filestl.png</normaloff>:/new/prefix1/images/filestl.png</iconset>
+   </property>
+   <property name="text">
+    <string>Read &amp;StL File</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/quit.png</normaloff>:/new/prefix1/images/quit.png</iconset>
+   </property>
+   <property name="text">
+    <string>E&amp;xit</string>
+   </property>
+  </action>
+  <action name="actionTrimBefore">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/trimbefore.png</normaloff>:/new/prefix1/images/trimbefore.png</iconset>
+   </property>
+   <property name="text">
+    <string>Trim &amp;Before</string>
+   </property>
+  </action>
+  <action name="actionTrimAfter">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/trimafter.png</normaloff>:/new/prefix1/images/trimafter.png</iconset>
+   </property>
+   <property name="text">
+    <string>Trim &amp;After</string>
+   </property>
+  </action>
+  <action name="actionTopView">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/top.png</normaloff>:/new/prefix1/images/top.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Top View</string>
+   </property>
+  </action>
+  <action name="actionBottomView">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/bottom.png</normaloff>:/new/prefix1/images/bottom.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Bottom View</string>
+   </property>
+  </action>
+  <action name="actionFrontView">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/front.png</normaloff>:/new/prefix1/images/front.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Front View</string>
+   </property>
+  </action>
+  <action name="actionBackView">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/back.png</normaloff>:/new/prefix1/images/back.png</iconset>
+   </property>
+   <property name="text">
+    <string>Bac&amp;k View</string>
+   </property>
+  </action>
+  <action name="actionLeftView">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/left.png</normaloff>:/new/prefix1/images/left.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Left View</string>
+   </property>
+  </action>
+  <action name="actionRightView">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/right.png</normaloff>:/new/prefix1/images/right.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Right View</string>
+   </property>
+  </action>
+  <action name="actionAxonoView">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/axo.png</normaloff>:/new/prefix1/images/axo.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Axono View</string>
+   </property>
+  </action>
+  <action name="actionProjection">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/ortho.png</normaloff>:/new/prefix1/images/ortho.png</iconset>
+   </property>
+   <property name="text">
+    <string>Projection</string>
+   </property>
+  </action>
+  <action name="actionFitAll">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/fitall.png</normaloff>:/new/prefix1/images/fitall.png</iconset>
+   </property>
+   <property name="text">
+    <string>Fit All</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionZoomWindow">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/zoomwin.png</normaloff>:/new/prefix1/images/zoomwin.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Zoom Window</string>
+   </property>
+  </action>
+  <action name="actionResetView">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/resetview.png</normaloff>:/new/prefix1/images/resetview.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reset &amp;View</string>
+   </property>
+  </action>
+  <action name="actionAntialiasing">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/antial.png</normaloff>:/new/prefix1/images/antial.png</iconset>
+   </property>
+   <property name="text">
+    <string>Antialiasing</string>
+   </property>
+  </action>
+  <action name="actionSnapshot">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/snapshot.png</normaloff>:/new/prefix1/images/snapshot.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Snapshot</string>
+   </property>
+  </action>
+  <action name="actionToolbars">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Toolbars</string>
+   </property>
+  </action>
+  <action name="actionMessagebar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Messagebar</string>
+   </property>
+  </action>
+  <action name="actionNCBlockbar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>NCBlockbar</string>
+   </property>
+  </action>
+  <action name="actionStatusbar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Statusbar</string>
+   </property>
+  </action>
+  <action name="actionPlay">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/play.png</normaloff>:/new/prefix1/images/play.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Play</string>
+   </property>
+  </action>
+  <action name="actionPlayStep">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/playstep.png</normaloff>:/new/prefix1/images/playstep.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pla&amp;y Step</string>
+   </property>
+  </action>
+  <action name="actionPickNPlay">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/pickplay.png</normaloff>:/new/prefix1/images/pickplay.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pick &amp;N Play</string>
+   </property>
+  </action>
+  <action name="actionRewind">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/rewind.png</normaloff>:/new/prefix1/images/rewind.png</iconset>
+   </property>
+   <property name="text">
+    <string>Re&amp;wind</string>
+   </property>
+  </action>
+  <action name="actionPause">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/pause.png</normaloff>:/new/prefix1/images/pause.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pa&amp;use</string>
+   </property>
+  </action>
+  <action name="actionStop">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/stop.png</normaloff>:/new/prefix1/images/stop.png</iconset>
+   </property>
+   <property name="text">
+    <string>St&amp;op</string>
+   </property>
+  </action>
+  <action name="actionDeleteSirus">
+   <property name="text">
+    <string>&amp;Delete Sirus</string>
+   </property>
+  </action>
+  <action name="actionDeleteModel">
+   <property name="text">
+    <string>Delete &amp;Model</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="text">
+    <string>&amp;Settings</string>
+   </property>
+  </action>
+  <action name="actionToolLibrary">
+   <property name="text">
+    <string>&amp;Tool Library</string>
+   </property>
+  </action>
+  <action name="actionRotaryAxes">
+   <property name="text">
+    <string>&amp;Rotary Axes</string>
+   </property>
+  </action>
+  <action name="actionHideSirus">
+   <property name="text">
+    <string>Hide &amp;Sirus</string>
+   </property>
+  </action>
+  <action name="actionShowCircularInterp">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show &amp;Circular Interp</string>
+   </property>
+  </action>
+  <action name="actionTransformations">
+   <property name="text">
+    <string>&amp;Transformations</string>
+   </property>
+  </action>
+  <action name="actionTransparent">
+   <property name="text">
+    <string>Transparent</string>
+   </property>
+  </action>
+  <action name="actionToolHide">
+   <property name="text">
+    <string>Hide</string>
+   </property>
+  </action>
+  <action name="actionToolColor">
+   <property name="text">
+    <string>Color</string>
+   </property>
+  </action>
+  <action name="actionTrailOff">
+   <property name="text">
+    <string>Off</string>
+   </property>
+  </action>
+  <action name="actionWireframe">
+   <property name="text">
+    <string>Wireframe</string>
+   </property>
+  </action>
+  <action name="actionModelHide">
+   <property name="text">
+    <string>Hide</string>
+   </property>
+  </action>
+  <action name="actionModelColor">
+   <property name="text">
+    <string>Color</string>
+   </property>
+  </action>
+  <action name="actionMaterial">
+   <property name="text">
+    <string>Material</string>
+   </property>
+  </action>
+  <action name="actionShowNormals">
+   <property name="text">
+    <string>Show Normals</string>
+   </property>
+  </action>
+  <action name="actionGridSettings">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionGridColor">
+   <property name="text">
+    <string>Color</string>
+   </property>
+  </action>
+  <action name="actionGridOn">
+   <property name="text">
+    <string>On</string>
+   </property>
+  </action>
+  <action name="actionColorToolPath">
+   <property name="text">
+    <string>Tool Path</string>
+   </property>
+  </action>
+  <action name="actionColorFeedTrail">
+   <property name="text">
+    <string>Feed Trail</string>
+   </property>
+  </action>
+  <action name="actionColorRapidTrail">
+   <property name="text">
+    <string>Rapid Trail</string>
+   </property>
+  </action>
+  <action name="actionColorG02Trail">
+   <property name="text">
+    <string>G02 Trail</string>
+   </property>
+  </action>
+  <action name="actionColorG03Trail">
+   <property name="text">
+    <string>G03 Trail</string>
+   </property>
+  </action>
+  <action name="actionIntersections">
+   <property name="text">
+    <string>Intersections</string>
+   </property>
+  </action>
+  <action name="actionRoughStock">
+   <property name="text">
+    <string>Rough Stock</string>
+   </property>
+  </action>
+  <action name="actionWYSIWYC">
+   <property name="text">
+    <string>WYSIWYC</string>
+   </property>
+  </action>
+  <action name="actionSearchBlock">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/searchbloc.png</normaloff>:/new/prefix1/images/searchbloc.png</iconset>
+   </property>
+   <property name="text">
+    <string>Search Block</string>
+   </property>
+  </action>
+  <action name="actionPickblock">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/pickbloc.png</normaloff>:/new/prefix1/images/pickbloc.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pick block</string>
+   </property>
+  </action>
+  <action name="actionSimulReport">
+   <property name="text">
+    <string>Simulation Report</string>
+   </property>
+  </action>
+  <action name="actionDistance">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/measdist.png</normaloff>:/new/prefix1/images/measdist.png</iconset>
+   </property>
+   <property name="text">
+    <string>Distance</string>
+   </property>
+  </action>
+  <action name="actionAngle">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/measang.png</normaloff>:/new/prefix1/images/measang.png</iconset>
+   </property>
+   <property name="text">
+    <string>Angle</string>
+   </property>
+  </action>
+  <action name="actionContents">
+   <property name="text">
+    <string>Contents</string>
+   </property>
+  </action>
+  <action name="actionSimulationbar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Simulationbar</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/filenew.png</normaloff>:/new/prefix1/images/filenew.png</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+   <property name="toolTip">
+    <string>New Document</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="Virmac.qrc">
+     <normaloff>:/new/prefix1/images/fileopen.png</normaloff>:/new/prefix1/images/fileopen.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionTile">
+   <property name="text">
+    <string>Tile</string>
+   </property>
+  </action>
+  <action name="actionCascade">
+   <property name="text">
+    <string>Cascade</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Virmac.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>horizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>lcdNumber</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>501</x>
+     <y>464</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>559</x>
+     <y>468</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,47 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>Splash</class>
+ <widget class="QWidget" name="Splash" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>730</width>
+    <height>515</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Virmac5X</string>
+  </property>
+  <layout class="QGridLayout" >
+   <property name="margin" >
+    <number>0</number>
+   </property>
+   <property name="spacing" >
+    <number>0</number>
+   </property>
+   <item row="0" column="0" >
+    <widget class="QLabel" name="pixmapLabel1" >
+     <property name="autoFillBackground" >
+      <bool>true</bool>
+     </property>
+     <property name="pixmap" >
+      <pixmap>images/splash.png</pixmap>
+     </property>
+     <property name="scaledContents" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <includes>
+  <include location="global" >qtimer.h</include>
+ </includes>
+ <resources/>
+ <connections/>
+</ui>
